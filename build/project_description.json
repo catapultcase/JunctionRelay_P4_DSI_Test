@@ -1,7 +1,7 @@
 {
     "version":            "1.2",
     "project_name":       "app-template",
-    "project_version":    "53474c2-dirty",
+    "project_version":    "4e2dd24-dirty",
     "project_path":       "D:/Dev/ESP-IDE/dsi_test",
     "idf_path":           "D:/Dev/ESP-IDE/.espressif/v5.5.1/esp-idf",
     "build_dir":          "D:/Dev/ESP-IDE/dsi_test/build",
@@ -918,14 +918,14 @@
             "target": "___idf_esp_psram",
             "prefix": "idf",
             "dir": "D:/Dev/ESP-IDE/.espressif/v5.5.1/esp-idf/components/esp_psram",
-            "type": "CONFIG_ONLY",
+            "type": "LIBRARY",
             "lib": "__idf_esp_psram",
             "reqs": [],
             "priv_reqs": [ "heap", "spi_flash", "esp_mm" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "",
-            "sources": [],
+            "file": "D:/Dev/ESP-IDE/dsi_test/build/esp-idf/esp_psram/libesp_psram.a",
+            "sources": [ "D:/Dev/ESP-IDE/.espressif/v5.5.1/esp-idf/components/esp_psram/system_layer/esp_psram.c", "D:/Dev/ESP-IDE/.espressif/v5.5.1/esp-idf/components/esp_psram/device/esp_psram_impl_ap_hex.c", "D:/Dev/ESP-IDE/.espressif/v5.5.1/esp-idf/components/esp_psram/xip_impl" ],
             "include_dirs": [ "include", "xip_impl/include" ]
         },
         "esp_ringbuf": {
@@ -1210,7 +1210,7 @@
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "file": "D:/Dev/ESP-IDE/dsi_test/build/esp-idf/heap/libheap.a",
-            "sources": [ "D:/Dev/ESP-IDE/.espressif/v5.5.1/esp-idf/components/heap/heap_caps_base.c", "D:/Dev/ESP-IDE/.espressif/v5.5.1/esp-idf/components/heap/heap_caps.c", "D:/Dev/ESP-IDE/.espressif/v5.5.1/esp-idf/components/heap/heap_caps_init.c", "D:/Dev/ESP-IDE/.espressif/v5.5.1/esp-idf/components/heap/multi_heap.c", "D:/Dev/ESP-IDE/.espressif/v5.5.1/esp-idf/components/heap/tlsf/tlsf.c", "D:/Dev/ESP-IDE/.espressif/v5.5.1/esp-idf/components/heap/port/memory_layout_utils.c", "D:/Dev/ESP-IDE/.espressif/v5.5.1/esp-idf/components/heap/port/esp32p4/memory_layout.c" ],
+            "sources": [ "D:/Dev/ESP-IDE/.espressif/v5.5.1/esp-idf/components/heap/heap_caps_base.c", "D:/Dev/ESP-IDE/.espressif/v5.5.1/esp-idf/components/heap/heap_caps.c", "D:/Dev/ESP-IDE/.espressif/v5.5.1/esp-idf/components/heap/heap_caps_init.c", "D:/Dev/ESP-IDE/.espressif/v5.5.1/esp-idf/components/heap/multi_heap.c", "D:/Dev/ESP-IDE/.espressif/v5.5.1/esp-idf/components/heap/tlsf/tlsf.c", "D:/Dev/ESP-IDE/.espressif/v5.5.1/esp-idf/components/heap/heap_trace_standalone.c", "D:/Dev/ESP-IDE/.espressif/v5.5.1/esp-idf/components/heap/port/memory_layout_utils.c", "D:/Dev/ESP-IDE/.espressif/v5.5.1/esp-idf/components/heap/port/esp32p4/memory_layout.c" ],
             "include_dirs": [ "include", "tlsf" ]
         },
         "http_parser": {
