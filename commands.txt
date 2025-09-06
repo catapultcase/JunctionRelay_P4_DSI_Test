@@ -1,0 +1,15 @@
+ESP TOOL
+
+- 0x2000 bootloader
+- 0x8000 partitions
+- 0x10000 bin
+
+
+build and flash:
+
+cd D:\Dev\ESP-IDE\dsi_test
+
+idf.py fullclean
+idf.py build
+idf.py -p COM4 erase-flash
+idf.py -p COM4 flash

@@ -25,8 +25,10 @@ rule C_COMPILER__bootloader.2eelf_unscanned_
 # Rule for linking C executable.
 
 rule C_EXECUTABLE_LINKER__bootloader.2eelf_
-  command = C:\WINDOWS\system32\cmd.exe /C "$PRE_LINK && C:\Espressif\tools\riscv32-esp-elf\esp-14.2.0_20241119\riscv32-esp-elf\bin\riscv32-esp-elf-gcc.exe $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
+  command = C:\WINDOWS\system32\cmd.exe /C "$PRE_LINK && C:\Espressif\tools\riscv32-esp-elf\esp-14.2.0_20241119\riscv32-esp-elf\bin\riscv32-esp-elf-gcc.exe $FLAGS $LINK_FLAGS @$RSP_FILE -o $TARGET_FILE && $POST_BUILD"
   description = Linking C executable $TARGET_FILE
+  rspfile = $RSP_FILE
+  rspfile_content = $in $LINK_PATH $LINK_LIBRARIES
   restat = $RESTAT
 
 
@@ -308,7 +310,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_main_
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = C:\Espressif\tools\cmake\3.30.2\bin\cmake.exe --regenerate-during-build -SC:\Espressif\frameworks\esp-idf-v5.5.1\components\bootloader\subproject -BD:\Dev\ESP-IDE\dsi_test\build\bootloader
+  command = C:\Espressif\tools\cmake\3.30.2\bin\cmake.exe --regenerate-during-build -SD:\Dev\ESP-IDE\.espressif\v5.5.1\esp-idf\components\bootloader\subproject -BD:\Dev\ESP-IDE\dsi_test\build\bootloader
   description = Re-running CMake...
   generator = 1
 

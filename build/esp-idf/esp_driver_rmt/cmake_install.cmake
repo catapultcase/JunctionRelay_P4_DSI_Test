@@ -1,4 +1,4 @@
-# Install script for directory: C:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_driver_rmt
+# Install script for directory: D:/Dev/ESP-IDE/.espressif/v5.5.1/esp-idf/components/esp_driver_rmt
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
