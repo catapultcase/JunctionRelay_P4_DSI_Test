@@ -1,7 +1,7 @@
 {
     "version":            "1.2",
     "project_name":       "app-template",
-    "project_version":    "d65bbad-dirty",
+    "project_version":    "7adb93f-dirty",
     "project_path":       "D:/Dev/ESP-IDE/dsi_test",
     "idf_path":           "D:/Dev/ESP-IDE/.espressif/v5.5.1/esp-idf",
     "build_dir":          "D:/Dev/ESP-IDE/dsi_test/build",
